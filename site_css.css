@@ -1,0 +1,118 @@
+
+body
+{   font-family: "microsoft yahei";
+
+}
+
+#div1
+{   height: 600px;
+
+}
+
+
+/* Style of the game board*/
+#game_area
+{   width: 500px;
+    margin-right: auto;
+    float: left;
+    display: inline;
+    padding-top: 35px;
+
+}
+
+#sudoku_board
+{   table-layout: fixed;
+    border: 7px solid grey;
+    width: 450px;
+    height: 450px;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+#answer_board
+{
+    table-layout: fixed;
+    border: 7px solid grey;
+    width: 450px;
+    height: 450px;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+#answer_area
+{   z-index: 1;
+    float: left;
+    display: block;
+    padding-left: 150px;
+    width: 500px;
+    padding-top: 35px;
+    display: none;
+}
+
+input[type=text]
+{   border: none;
+    z-index: 0;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+    font-size: 45px;
+    color: black;
+    caret-color: transparent;
+    background-color: rgba(0,0,0,0);
+}
+
+td
+{   z-index: 1;
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey;
+}
+
+#game_actions
+{   float: none;
+
+}
+
+/* Style of the Leaderboard */
+
+#leaderboard_area
+{   z-index: 0;
+    width: 300px;
+    float: left;
+    display: block;
+    padding-left: 150px;
+    padding-top: 35px;
+}
+
+
+#leaderboard
+{   width: 300px;
+    height: 475px;
+    font-family: "microsoft yahei ui";
+    font-size: 20px;
+    border: 7px solid grey;
+}
+
+/*Style of instructions*/
+#instructions
+{   width: 950px;
+    word-break: break-all;
+    padding-top: 50px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

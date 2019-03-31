@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> Sudoku! </title>
+<style>
+	#body {
+		width: 500px;
+		height: 500px;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-top: -250px;
+		margin-left: -250px;
+	}
+</style>
+
+<script>
+    /*Test the form*/
+	function isFilledForm()
+	{   var fm;
+		fm = document.forms["form1"]["player_name"].value;
+
+		if(fm==null||fm=="")
+		{   window.alert("Player name  must be filled out.");
+			return false;
+		}
+	}
+
+</script>
+
+</head>
+<body id="body">
+<h1> A easy to use, online Sudoku Game </h1>
+<h2> Created by Joshua Clarke </h2>
+<form id="form1" action="site.php" method="GET" onsubmit="return isFilledForm()">
+	<p> Select A Difficulty </p>
+	<input type="radio" name="diff" value="Demo"> Demo </input>
+	<input type="radio" name="diff" value="Easy" checked> Easy </input>
+	<input type="radio" name="diff" value="Medium"> Medium </input>
+	<input type="radio" name="diff" value="Hard"> Hard </input>
+	<br><br>
+
+    Your Name: <input type="text" name="player_name">
+
+	<br>
+	<br>
+	<input type="submit" value="Start Game!"></input>
+</form>
+</body>
+</html>
